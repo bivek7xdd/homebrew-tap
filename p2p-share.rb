@@ -5,20 +5,20 @@
 class P2pShare < Formula
   desc "A beautiful TUI for P2P file sharing"
   homepage "https://github.com/bivek7xdd/p2p-share"
-  version "1.0.4"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bivek7xdd/p2p-share/releases/download/v1.0.4/p2p-share_1.0.4_darwin_amd64.tar.gz"
-      sha256 "455b9cdb07f8f21414d28f98d3de2aaf422184e9bfdb72c2c3082a0bc4527a97"
+      url "https://github.com/bivek7xdd/p2p-share/releases/download/v1.0.1/p2p-share_1.0.1_darwin_amd64.tar.gz"
+      sha256 "6e937ad2c5b66ba43361af1b262e0af35c91f49e9e368e4c6fb5b4da11d369a6"
 
       define_method(:install) do
         bin.install "p2p-share"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bivek7xdd/p2p-share/releases/download/v1.0.4/p2p-share_1.0.4_darwin_arm64.tar.gz"
-      sha256 "b248796b94790f240d5ed32a9244e4796e96c37c0b3bb151b421b3c456f727dc"
+      url "https://github.com/bivek7xdd/p2p-share/releases/download/v1.0.1/p2p-share_1.0.1_darwin_arm64.tar.gz"
+      sha256 "6b534fd30f9ccc219c8e86570df4f548c4a3c2e44c4b2696f2b6b350389d8a56"
 
       define_method(:install) do
         bin.install "p2p-share"
@@ -28,15 +28,15 @@ class P2pShare < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bivek7xdd/p2p-share/releases/download/v1.0.4/p2p-share_1.0.4_linux_amd64.tar.gz"
-      sha256 "85cceddbf951b090cd14c9e630821e1df93642a5cefdc40a773c1d7979195baa"
+      url "https://github.com/bivek7xdd/p2p-share/releases/download/v1.0.1/p2p-share_1.0.1_linux_amd64.tar.gz"
+      sha256 "f28ab91ce7caf17ef1af800b65f7408e246917ed24f3f31b399aeabac214bcb8"
       define_method(:install) do
         bin.install "p2p-share"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bivek7xdd/p2p-share/releases/download/v1.0.4/p2p-share_1.0.4_linux_arm64.tar.gz"
-      sha256 "ac1eb25d383fcdcd380b14feeddc69dd71885ae9c375dfdefe32393da8032717"
+      url "https://github.com/bivek7xdd/p2p-share/releases/download/v1.0.1/p2p-share_1.0.1_linux_arm64.tar.gz"
+      sha256 "7384cfe3846ed07e75d4888d95047da0d63193e0077747da5841e046fffae853"
       define_method(:install) do
         bin.install "p2p-share"
       end
